@@ -22,4 +22,7 @@ Bu mobil uygulama, öğrenci taşımacılığı yapan servislerin güzergahları
 
 
 ![sayfa1](https://github.com/user-attachments/assets/041337c7-52ea-482b-a7b0-f348d4b12952)
+
+
+
 ![sayfa16](https://github.com/user-attachments/assets/49a75f4a-362e-4699-9380-aceb51f42b49)
