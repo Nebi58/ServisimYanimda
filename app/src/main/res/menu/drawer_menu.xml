@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <item
+        android:title="Şoför Bilgileri">
+        <menu>
+            <item
+                android:id="@+id/sofor_ara"
+                android:title="Şoför Ara"
+                android:icon="@drawable/baseline_arrow_back_24"
+                />
+            <item
+                android:id="@+id/soforler"
+                android:title="Şoförlerim"
+                android:icon="@drawable/baseline_arrow_back_24"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/kullanici_bilgileri"
+        android:title="Kullanıcı Bilgileri"
+        android:icon="@drawable/baseline_arrow_back_24"
+        />
+    <item
+        android:id="@+id/cikis"
+        android:title="Çıkış"
+        android:icon="@drawable/baseline_arrow_back_24"
+        />
+
+</menu>

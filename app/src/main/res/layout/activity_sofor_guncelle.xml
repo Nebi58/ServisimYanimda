@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sofor_guncelle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoforGuncelleActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/servisresimsiz"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-25dp" />
+
+    <EditText
+        android:id="@+id/SoforAdGun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/baseline_perm_identity_25"
+        android:drawablePadding="13dp"
+        android:hint="Şoför Adı"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/SoforSoyadGun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_perm_identity_25"
+        android:drawablePadding="13dp"
+        android:hint="Şoför Soyadı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoforAdGun"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/SoforTcGun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_perm_identity_25"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:drawablePadding="13dp"
+        android:hint="@string/tc_kimlik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoforSoyadGun"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/SoforTelGun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_perm_identity_25"
+        android:inputType="number"
+        android:maxLength="13"
+        android:drawablePadding="13dp"
+        android:hint="Telefon Numarası"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoforTcGun"
+        app:layout_constraintVertical_bias="0.002"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/SoforSifreGun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CCCCCC"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_perm_identity_25"
+        android:drawablePadding="13dp"
+        android:maxLength="10"
+        android:hint="@string/ifre"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoforTelGun"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/SoforGuncelle"
+        android:layout_width="225dp"
+        android:layout_height="53dp"
+        android:background="@drawable/buttonarkaplan"
+        android:padding="14dp"
+        android:text="Güncelle"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SoforSifreGun"
+        app:layout_constraintVertical_bias="0.493"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:onClick="GeriButonu"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

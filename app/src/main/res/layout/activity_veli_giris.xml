@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VeliGirisActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/foreground_design"
+        android:scaleType="centerCrop"
+        android:src="@drawable/servis"
+        tools:layout_editor_absoluteX="-135dp"
+        tools:layout_editor_absoluteY="-137dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/veli_giri_i"
+        android:textAlignment="center"
+        android:textColor="#fbfbfb"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <EditText
+        android:id="@+id/veliGirisTcText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:maxLength="11"
+        android:inputType="number"
+        android:backgroundTint="#CCCCCC"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="13dp"
+        android:hint="@string/tc_kimlik"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/veliGirisSifreText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#CCCCCC"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:drawablePadding="13dp"
+        android:textColor="@color/white"
+        android:hint="@string/ifre"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veliGirisTcText"
+        app:layout_constraintWidth_percent=".8" />
+
+    <ImageButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="sifre"
+        android:src="@drawable/baseline_visibility_off_24"
+        app:layout_constraintBottom_toBottomOf="@+id/veliGirisSifreText"
+        app:layout_constraintEnd_toEndOf="@+id/veliGirisSifreText"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="@+id/veliGirisSifreText"
+        app:layout_constraintTop_toTopOf="@+id/veliGirisSifreText"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="225dp"
+        android:layout_height="53dp"
+        android:background="@drawable/buttonarkaplan"
+        android:padding="14dp"
+        android:text="Giriş Yap"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veliGirisSifreText"
+        app:layout_constraintVertical_bias="0.204"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/backbutton"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:onClick="GeriButonu"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ye_de_il_misiniz"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <TextView
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:onClick="RegisterButon"
+        android:text="Üye Ol"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris"
+        app:layout_constraintVertical_bias="0.322" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

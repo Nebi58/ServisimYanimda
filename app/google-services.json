@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227966490153",
+    "project_id": "servisimyanimda-57fa0",
+    "storage_bucket": "servisimyanimda-57fa0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227966490153:android:97159e6a3f8a256417ee38",
+        "android_client_info": {
+          "package_name": "com.nebi.servisilk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAAF14uUBv5BOSTEMQ5L4g9p3H1Dn_Q94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

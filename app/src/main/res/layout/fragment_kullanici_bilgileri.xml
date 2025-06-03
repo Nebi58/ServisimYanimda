@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_kullanici_bilgileri"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KullaniciBilgileriFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/servisresimsiz"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/servisresimsiz"
+        android:text="@string/kullan_c_bilgileri"
+        android:paddingTop="90dp"
+        android:paddingLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/veliAdBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Veli Adı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/veliSoyadBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Veli Soyadı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veliAdBilgi"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/velitcKimlikBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="TC Kimlik Numarası: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veliSoyadBilgi"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/telefonNoBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Telefon Numarası: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/velitcKimlikBilgi"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/ogrenciAdBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Öğrenci Adı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonNoBilgi"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/ogrenciSoyadBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Öğrenci Soyadı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciAdBilgi"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/sifreBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Şifre: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciSoyadBilgi"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/adresBilgi"
+        android:layout_width="375dp"
+        android:layout_height="70dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Adres: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreBilgi"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/editButon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/backbutton"
+        android:drawableLeft="@drawable/baseline_edit_24"
+        android:onClick="EditButon"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

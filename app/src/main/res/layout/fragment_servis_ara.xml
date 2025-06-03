@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServisAraFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/servis3"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="@string/serv_s_m_yanimda"
+        android:textAlignment="center"
+        android:textColor="@color/yesil"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/ServisAraText"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <EditText
+        android:id="@+id/ServisAraText"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:background="@drawable/servisaraarka"
+        android:drawablePadding="13dp"
+        android:hint="Şoför ID Ara"
+        android:paddingLeft="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ServisAraButton"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@drawable/servisaraarka"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/ServisAraText"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="@+id/ServisAraText"
+        app:layout_constraintTop_toTopOf="@+id/ServisAraText"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/KulaniciBilgiCard"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:padding="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ServisAraText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/servisaraarka"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/KullaniciIcon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="Kullanıcı Simgesi"
+                android:src="@drawable/baseline_perm_identity_black"
+                android:layout_marginTop="-25dp"
+                app:layout_constraintHorizontal_bias="0.5" />
+
+            <TextView
+                android:id="@+id/ServisText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                app:layout_constraintHorizontal_bias="0.5" />
+
+            <Button
+                android:id="@+id/KatilButon"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-15dp"
+                android:background="@drawable/katil"
+                android:drawableLeft="@drawable/baseline_add_24"
+                android:drawablePadding="2dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="KATIL"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

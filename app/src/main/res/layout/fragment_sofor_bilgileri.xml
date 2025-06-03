@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_sofor_bilgileri"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoforBilgileriFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/servisresimsiz"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/servisresimsiz"
+        android:text="@string/sofor_bilgileri"
+        android:paddingTop="90dp"
+        android:paddingLeft="100dp"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/soforAdBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Şoför Adı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <TextView
+        android:id="@+id/soforSoyadBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Şoför Soyadı: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soforAdBilgi"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/sofortcKimlikBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="TC Kimlik Numarası: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soforSoyadBilgi"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/sofortelefonNoBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Telefon Numarası: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sofortcKimlikBilgi"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <TextView
+        android:id="@+id/soforsifreBilgi"
+        android:layout_width="375dp"
+        android:layout_height="41dp"
+        android:background="@drawable/kullanicibilgi"
+        android:text="Şifre: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sofortelefonNoBilgi"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/editButonSofor"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/backbutton"
+        android:drawableLeft="@drawable/baseline_edit_24"
+        android:onClick="EditButon"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
